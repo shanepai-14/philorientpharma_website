@@ -105,6 +105,8 @@ body {
 
 .hero {
   height: auto;
+
+  position: relative;
 }
 .hero-title p {
   margin-bottom: 36px;
@@ -211,10 +213,17 @@ body {
 }
 
 .services-sec {
-  background-color: #4d77ff0f;
+  background-color: #edf1ff;
   padding-top: 88px;
   padding-bottom: 88px;
+  background-image: url(../img/blob-bg-ser.svg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size:cover;
+ 
+ 
 }
+
 .card-item img {
   width: 70%;
   object-fit: cover;
@@ -286,40 +295,43 @@ footer {
 }
 
 .about-bg {
-  background-color: #EDF1FF;
+  background-color: #edf1ff;
 }
-.img-border{
+.img-border {
   position: relative;
 
   display: inline-block;
 }
-.img-border::before{
+.img-border::before {
   position: absolute;
   bottom: -5%;
-right: -5%;
+  right: -5%;
   width: 100%;
   height: 100%;
   z-index: -1;
   border: 4px solid var(--primary-color);
-  content: ''
+  content: "";
 }
 .img-border {
- position: absolute;
- bottom: -20%;
- left: 7%;
+  position: absolute;
+  bottom: -20%;
+  left: 23%;
+}
+.about-h1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
 }
 @media (max-width: 768px) {
-  .about-sec-img{
+  .about-sec-img {
     margin-bottom: 40px;
-
-  
   }
-  .img-border{
+  .img-border {
     left: 23%;
-    top: 11%;;
+    top: 11%;
     bottom: -11%;
   }
-  .about-h4{
-    margin-bottom: 20px!important;
+  .about-h4 {
+    margin-bottom: 20px !important;
   }
 }
