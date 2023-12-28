@@ -219,9 +219,7 @@ body {
   background-image: url(../img/blob-bg-ser.svg);
   object-fit: cover;
   background-repeat: no-repeat;
-  background-size:cover;
- 
- 
+  background-size: cover;
 }
 
 .card-item img {
