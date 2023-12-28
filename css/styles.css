@@ -323,6 +323,7 @@ footer {
   border: 4px solid var(--primary-color);
   content: "";
 }
+
 .img-border {
   position: absolute;
   bottom: -12%;
@@ -470,9 +471,8 @@ button.contact_form_submit {
     text-align: center;
   }
   .img-border {
-  
-    height: 85%!important;
-}
+    height: 85% !important;
+  }
 }
 @media (max-width: 768px) {
   .about-sec-img {
