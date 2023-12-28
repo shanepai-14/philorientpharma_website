@@ -465,7 +465,7 @@ button.contact_form_submit {
     margin-bottom: 40px;
   }
   .img-border {
-    left: 12%;
+    left: 9%;
     top: 11%;
     bottom: -11%;
   }
@@ -473,12 +473,24 @@ button.contact_form_submit {
     margin-bottom: 20px !important;
   }
 }
+@media (max-width: 500px) {
+  .contact_field {
+    padding: 60px 30px 30px 30px !important;
+  }
+  .img-border {
+  
+    height: 360px;
+  }
+  .img-border img {
+width: 360px;
+  }
+  
+}
 @media (max-width: 992px) {
   .contact_info_sec {
     display: none;
-
   }
   .contact_field {
     padding: 60px 100px 100px 100px;
-}
+  }
 }
