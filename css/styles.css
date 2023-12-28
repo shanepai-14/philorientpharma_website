@@ -478,13 +478,12 @@ button.contact_form_submit {
     padding: 60px 30px 30px 30px !important;
   }
   .img-border {
-  
-    height: 360px;
+    width:  75%;
+    height: 91%;
   }
   .img-border img {
-width: 360px;
+    width: 100%;
   }
-  
 }
 @media (max-width: 992px) {
   .contact_info_sec {
