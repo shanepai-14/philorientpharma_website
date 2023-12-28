@@ -49,6 +49,12 @@ header {
   font-weight: 500;
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.42px;
+  transition: all 0.3s ease;
+}
+.nav-link:hover{
+  color: var(--primary-color);
+  transform: scale(1.1)
+
 }
 .contact-btn {
   border-radius: 10px;
@@ -56,15 +62,14 @@ header {
   padding: 10px 14px 10px 14px;
   border: none;
   color: var(--bg);
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
   transition: all 0.6s ease;
 }
 .contact-btn:hover {
   box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px var(--primary-color);
+  transform: translateX(5px);
 }
-/* .nav-container {
-  display: flex;
-} */
+
 .link {
   text-decoration: none;
 }
@@ -149,7 +154,7 @@ header {
   z-index: 1;
   left: -22px;
   top: -23px;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.6s ease;
   transform-origin: center center;
 }
 
