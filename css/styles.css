@@ -477,6 +477,27 @@ button.contact_form_submit {
   .about-h4 {
     margin-bottom: 20px !important;
   }
+  .hero-img-group {
+    position: absolute;
+    z-index: -1;
+    width: 60%;
+  }
+
+  .overlay {
+    background: #f6f6f6;
+    background: linear-gradient(to right, #e9f2fb, #e2edfa);
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .hero-title {
+    z-index: 5;
+  }
 }
 @media (max-width: 500px) {
   .contact_field {
@@ -492,18 +513,17 @@ button.contact_form_submit {
   .hero-img-group {
     position: absolute;
     z-index: -1;
-    
+    width: 100%;
   }
-  .medicine{
+  .medicine {
     z-index: 0;
   }
   .hero-image {
     z-index: -1;
-    width: 95%;
+    width: 95% !important;
   }
   .overlay {
     background: #f6f6f6;
-  
     background: linear-gradient(to right, #e9f2fb, #e2edfa);
     opacity: 0.7;
     position: absolute;
@@ -513,11 +533,10 @@ button.contact_form_submit {
     right: 0;
     left: 0;
     z-index: 1;
-
-}
-.hero-title {
-  z-index: 5;
-}
+  }
+  .hero-title {
+    z-index: 5;
+  }
 }
 @media (max-width: 992px) {
   .contact_info_sec {
