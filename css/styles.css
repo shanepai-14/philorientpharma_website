@@ -465,10 +465,14 @@ button.contact_form_submit {
   border-radius: 30px;
   overflow: hidden;
 }
-@media (max-width: 463px){
-  .hero-head{
+@media (max-width: 463px) {
+  .hero-head {
     text-align: center;
   }
+  .img-border {
+  
+    height: 86%!important;
+}
 }
 @media (max-width: 768px) {
   .about-sec-img {
@@ -486,8 +490,7 @@ button.contact_form_submit {
     position: absolute;
     z-index: -1;
     /* Use 100% to take the full width of the container */
-    
-    
+
     width: 450px;
   }
 
