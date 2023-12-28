@@ -499,6 +499,7 @@ button.contact_form_submit {
   }
   .hero-image {
     z-index: -1;
+    width: 95%;
   }
   .overlay {
     background: #f6f6f6;
