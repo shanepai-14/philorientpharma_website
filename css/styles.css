@@ -465,6 +465,11 @@ button.contact_form_submit {
   border-radius: 30px;
   overflow: hidden;
 }
+@media (max-width: 463px){
+  .hero-head{
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
   .about-sec-img {
     margin-bottom: 40px;
