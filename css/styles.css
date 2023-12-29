@@ -521,6 +521,9 @@ button.contact_form_submit {
   .contact_field {
     padding: 60px 30px 30px 30px !important;
   }
+  .card-item {
+    height: auto;
+    width: 350px;}
   .img-border {
     width: 75%;
     height: 91%;
