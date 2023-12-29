@@ -36,20 +36,20 @@
  
       
         <nav class="navbar navbar-expand-lg bg-white">
-  <div class="container-fluid"  >
+  <div class="container-fluid">
     <a href="./index.html" class="navbar-brand link logo">Philorientpharma</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a href="./index.html" class="link nav-link active-link">Home</a></li>
-              <li class="nav-item"><a href="#aboutus" class="link nav-link">About Us</a></li>
-              <li class="nav-item"><a href="#services" class="link nav-link">Services</a></li>
-              <li class="nav-item"><a href="./blog.html" class="link nav-link">Blog</a></li>
+        <li class="nav-item"><a href="./index.html" class="link nav-link">Home</a></li>
+              <li class="nav-item"><a href="./index.html#aboutus" class="link nav-link ">About Us</a></li>
+              <li class="nav-item"><a href="./index.html#services" class="link nav-link">Services</a></li>
+              <li class="nav-item"><a href="./blog.html" class="link nav-link active-link">Blog</a></li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-              <button type="button" class="contact-btn" ><a href="#contactus" class="link">Contact Us</a></button>
+              <button type="button" class="contact-btn" data-modal-open><a href="./index.html#contactus" class="link">Contact Us</a></button>
             </form>
       </ul>
     
@@ -59,124 +59,12 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="overlay"></div>
-      <div class="hero-backg position-absolute z-n1 overflow-hidden">
-      <img src="./img/herobg.jpg"  class="" width="100%">
-      </div>
-      <div class="container">
-   <div class="row">
-    <div class="hero-title col-md-6">
-      <h1 class="hero-head slideanim">
-        Your Trusted Partner in Healthcare <span>Excellence</span>
-      </h1>
 
-      <p class="slideanim">
-        At Phil Orientpharma, we're more than just distributors – we're your
-        dedicated partners in empowering healthcare excellence. From
-        cutting-edge tools to unwavering support, we bridge gaps, build
-        legacies, and elevate patient care, one supply at a time. Join us on
-        a journey towards a healthier future, together.
-      </p>
-      <div class="c-btn slideanim">
-        <button class="contact-btn"><a href="#contactus" class="link">Contact Us</a></button>
-      </div>
-    </div>
-    <div class="hero-img-group col-md-6 slideanim">
-     
-      <img
-        src="./img/hero-img-medicine-removebg.png"
-        alt=""
-        class="medicine"
-      />
-      <div class="hero-image">
-        <img src="./img/hero-img-bottle.png" alt="" class="bottle" />
-      </div>
-    </div>
-   </div>
-      </div>
-    </section>
-    <section class="bg-white pt-5" id="aboutus">
-      <div class="container " style="margin-bottom: 227px;">
-        <h1 class="text-center mb-5 about-h1 slideanim">About Us</h1>
-
-        <div> 
-          <div class="row position-relative">
-        
-            <div class="col-sm col-md z-1 d-flex align-content-center position-relative about-sec-img slideanim">
-              <img src="https://picsum.photos/400" alt="" class="opacity-0">
-              <div class="img-border">
-                <img src="https://picsum.photos/400" alt="" >
-              </div>
-            </div>
-            <div class="col-sm col-md z-1  d-flex justify-content-center align-content-center p-5 flex-column slideanim">
-                <p class="h-auto m-auto about-h4">
-                  Philorientpharma is a leading pharmacy company committed to providing exceptional healthcare solutions to enhance the well-being of individuals and communities. With a relentless focus on quality, accessibility, and innovation, we strive to be a trusted partner in promoting health and ensuring patient satisfaction. 
-                </p>
-                <button class="btn btn-primary rounded-pill m-auto slideanim" style="width: 130px;">Learn More</button>
-            </div>
-            <div class="h-100 about-bg z-0 position-absolute"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="services-sec " id="services">
-      <div class="container">
-        <h3 class="text-center sec-h3 slideanim">Our Services</h3>
-
-        <p class="text-center sec-p slideanim">
-          We take pride in offering a comprehensive range of services designed
-          to cater to your health and well-being. Our expert team of pharmacists
-          is dedicated to ensuring the highest standard of care, from accurate
-          and timely prescription filling to providing a diverse selection of
-          over-the-counter medications and healthcare products
-        </p>
-
-        <ul class="services-list">
-          <li class="slideanim">
-            <div class="card-item">
-              <div>
-                <img src="./img/4.png" alt="" />
-              </div>
-              <h4>Medicine</h4>
-              <p>
-                Whether it's a familiar pill or a cutting-edge treatment, we
-                offer a comprehensive range of pharmaceutical solutions.
-              </p>
-            </div>
-          </li>
-          <li class="slideanim">
-            <div class="card-item">
-              <div>
-                <img src="./img/2.png" alt="" />
-              </div>
-              <h4>Supplies</h4>
-              <p>
-                Our partner medical facilities can rely on the highest quality
-                medical supplies to deliver exceptional care.
-              </p>
-            </div>
-          </li>
-          <li class="slideanim">
-            <div class="card-item">
-              <div>
-                <img src="./img/1.png" alt="" />
-              </div>
-              <h4>Equipments</h4>
-              <p>
-                Partnering with us means your medical facilities have access to
-                state-of-the-art medical equipment for unparalleled patient care
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
    
     <section
-      class="d-flex justify-content-center flex-column align-content-center sec-blog"
+      class="d-flex justify-content-center flex-column align-content-center sec-blog "
     >
-      <h3 class="text-center mb-5" style="margin-top: 88px">
+      <h3 class="text-center mb-5 slideanim" style="margin-top: 100px">
         Check out latest Blog
       </h3>
       <div class="container">
@@ -208,75 +96,11 @@
         </div>
       
       </div>
-      <button class="btn btn-primary w-auto m-auto mb-5 rounded-pill slideanim">
+      <!-- <button class="btn btn-primary w-auto m-auto mb-5 rounded-pill">
         View All
-      </button>
+      </button> -->
     </section>
-    <section class="contact_us" id="contactus">
-      <div class="container" >
-          <div class="row slideanim" >
-              <div class="col-md-10 offset-md-1">
-                  <div class="contact_inner">
-                      <div class="row">
-                          <div class="col-md-10">
-                              <div class="contact_form_inner">
-                                  <div class="contact_field">
-                                      <h3>Contact Us</h3>
-                                      <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
-                                      <input type="text" class="form-control form-group" placeholder="Name" />
-                                      <input type="text" class="form-control form-group" placeholder="Email" />
-                                      <textarea class="form-control form-group" placeholder="Message"></textarea>
-                                      <button class="contact_form_submit">Send</button>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-2">
-                              <div class="right_conatct_social_icon d-flex align-items-end">
-                                 <div class="socil_item_inner d-flex">
-                                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                 </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="contact_info_sec col">
-                          <h4>Contact Info</h4>
-                          <div class="d-flex info_single align-items-center">
-                              <i class="fas fa-headset"></i>
-                              <span>+91 8009 054294</span>
-                          </div>
-                          <div class="d-flex info_single align-items-center">
-                              <i class="fas fa-envelope-open-text"></i>
-                              <span>info@flightmantra.com</span>
-                          </div>
-                          <div class="d-flex info_single align-items-center">
-                              <i class="fas fa-map-marked-alt"></i>
-                              <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
-                          </div>
-          
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-  
-  <section class="map_sec">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-10 offset-md-1">
-                  <div class="map_inner slideanim">
-                      <h4 >Find Us on Google Map</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quo beatae quasi assumenda, expedita aliquam minima tenetur maiores neque incidunt repellat aut voluptas hic dolorem sequi ab porro, quia error.</p>
-                      <div class="map_bind">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.5287219154216!2d125.60290094367271!3d7.064524974784814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d78c3c50cd1%3A0xe2da0fc53e9c675f!2sDavao%20City%20Hall!5e0!3m2!1sen!2sph!4v1703761474930!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"  aria-hidden="false" tabindex="0"referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+
 
 
    
@@ -409,9 +233,9 @@
             cardContainer.appendChild(cardElement);
             newsCardContainer.appendChild(cardContainer);
 
-            if (i === 4) {
-              break;
-            }
+            // if (i === 4) {
+            //   break;
+            // }
           }
         }
       }
