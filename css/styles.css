@@ -478,6 +478,10 @@ button.contact_form_submit {
   }
 }
 @media (max-width: 768px) {
+  .nav-link:hover {
+    color: var(--primary-color);
+    transform: translate(5px);
+  }
   .about-sec-img {
     margin-bottom: 40px;
   }
@@ -612,7 +616,7 @@ button.contact_form_submit {
   background-repeat: no-repeat;
 }
 .active-link {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
   color: var(--primary-color);
 }
 .sec-blog h3 {

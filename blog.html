@@ -153,7 +153,7 @@
         "apiKey=f0da2bc8de044484ade07e7d33bc9021";
 
       var req = new Request(url);
-
+      const newsCardContainer = document.getElementById("news-card");
       fetch(req)
         .then(function (response) {
           if (!response.ok) {
@@ -165,6 +165,7 @@
           if (data.articles.length === 0) {
             console.log("No health articles found.");
           } else {
+            newsCardContainer.innerHTML = '';
             displayNewsWithImages(data.articles.slice(0, 50));
             console.log(data.articles); // Display the first 3 articles with images
           }
@@ -174,7 +175,7 @@
         });
 
       function displayNewsWithImages(articles) {
-        const newsCardContainer = document.getElementById("news-card");
+       
         var i = 0;
         for (let index = 0; index < articles.length; index++) {
           const article = articles[index];
