@@ -11,6 +11,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="icon" 
+     type="image/png" 
+     href="./img/phil-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,13 +34,14 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+  <div>
+    <header id="navbar">
       <div class="container">
  
       
-        <nav class="navbar navbar-expand-lg bg-white">
-  <div class="container-fluid"  >
-    <a href="./index.html" class="navbar-brand link logo">Philorientpharma</a>
+        <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a href="./index.html" class="navbar-brand link logo"><img src="./img/phil-logo.png" alt="" width="50px"> Phil-Orient Pharma</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,7 +53,7 @@
               <li class="nav-item"><a href="./blog.html" class="link nav-link">Blog</a></li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-              <button type="button" class="contact-btn" ><a href="#contactus" class="link">Contact Us</a></button>
+              <button type="button" class="contact-btn rounded-pill" ><a href="#contactus" class="link"><i class="bi bi-telephone"></i>&nbsp;   Contact Us</a></button>
             </form>
       </ul>
     
@@ -60,26 +64,44 @@
     </header>
 
     <section class="hero">
+ 
+   <div >
+    <img src="./img/svg/ventilator_alt.svg" alt="" width="50" class="position-absolute ventilator" >
+    <img src="./img/svg/wheelchair_alt.svg" alt="" width="50" class="position-absolute wheelchair" style="top:20%; left:20%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+    <img src="./img/svg/virus_lab_research_syringe.svg" alt="" width="50" class="position-absolute" style="top:12%; left:40%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+    <img src="./img/svg/xray.svg" alt="" width="50" class="position-absolute" style="top:79%; left:45%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+    <img src="./img/svg/syringe.svg" alt="" width="50" class="position-absolute" style="top:14%; left:10%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+    <img src="./img/svg/oxygen_tank.svg" alt="" width="50" class="position-absolute" style="top:70%; left:35%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+    <img src="./img/svg/tac.svg" alt="" width="50" class="position-absolute" style="top:80%; left:90%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+    <img src="./img/svg/ultrasound_scanner.svg" alt="" width="50" class="position-absolute" style="top:13%; left:87.5%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+    <img src="./img/svg/surgical_sterilization.svg" alt="" width="50" class="position-absolute surgical" style="top:55%; left:25%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+    <img src="./img/svg/intravenous_bag.svg" alt="" width="50" class="position-absolute intravenous" style="top:46%; left:10%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+   </div>
+   <img src="./img/svg/oxygen_tank.svg" alt="" width="50" class="position-absolute" style="top:18%; left:29.7%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
       <div class="overlay"></div>
-      <div class="hero-backg position-absolute z-n1 overflow-hidden">
-      <img src="./img/herobg.jpg"  class="" width="100%">
+      
+      <div class="hero-backg position-absolute z-n1 overflow-hidden h-100">
+      <img src="./img/herobg.jpg"   width="100%">
+
       </div>
+      
       <div class="container">
    <div class="row">
     <div class="hero-title col-md-6">
+    
       <h1 class="hero-head slideanim">
         Your Trusted Partner in Healthcare <span>Excellence</span>
       </h1>
 
       <p class="slideanim">
-        At Phil Orientpharma, we're more than just distributors – we're your
-        dedicated partners in empowering healthcare excellence. From
-        cutting-edge tools to unwavering support, we bridge gaps, build
-        legacies, and elevate patient care, one supply at a time. Join us on
-        a journey towards a healthier future, together.
+        Welcome to Phil-Orient Pharma, where passion meets innovation in healthcare! We're dedicated to pioneering top-quality solutions with integrity and collaboration at our core. Join us on the journey to a healthier, brighter future for all!
+
       </p>
       <div class="c-btn slideanim">
-        <button class="contact-btn"><a href="#contactus" class="link">Contact Us</a></button>
+        <button class="contact-btn rounded-pill"><a href="#contactus" class="link"><i class="bi bi-telephone"></i> &nbsp;Contact Us</a></button>
+        <img src="./img/svg/stethoscope.svg" alt="" class="icons">
+    
+       
       </div>
     </div>
     <div class="hero-img-group col-md-6 slideanim">
@@ -87,7 +109,7 @@
       <img
         src="./img/hero-img-medicine-removebg.png"
         alt=""
-        class="medicine"
+        class="medicine" id="medicine"
       />
       <div class="hero-image">
         <img src="./img/hero-img-bottle.png" alt="" class="bottle" />
@@ -96,6 +118,8 @@
    </div>
       </div>
     </section>
+  </div>
+ 
     <section class="bg-white pt-5" id="aboutus">
       <div class="container " style="margin-bottom: 227px;">
         <h1 class="text-center mb-5 about-h1 slideanim">About Us</h1>
@@ -104,20 +128,143 @@
           <div class="row position-relative">
         
             <div class="col-sm col-md z-1 d-flex align-content-center position-relative about-sec-img slideanim">
-              <img src="https://picsum.photos/400" alt="" class="opacity-0">
+              <img src="./img/ppmst.png" width="400" alt="" class="opacity-0">
               <div class="img-border">
-                <img src="https://picsum.photos/400" alt="" >
+                <img src="./img/ppmst.png" width="400" alt="" >
               </div>
             </div>
             <div class="col-sm col-md z-1  d-flex justify-content-center align-content-center p-5 flex-column slideanim">
                 <p class="h-auto m-auto about-h4">
-                  Philorientpharma is a leading pharmacy company committed to providing exceptional healthcare solutions to enhance the well-being of individuals and communities. With a relentless focus on quality, accessibility, and innovation, we strive to be a trusted partner in promoting health and ensuring patient satisfaction. 
+                  Phil-Orient Pharma and Medical Supplies Trading is a start-up pharmaceutical and medical supplies company based in Cebu, Philippines, with a starting scope of the Visayas and Mindanao Region. The company is being led by a team of veteran medical representatives coming from both the pharmaceutical industry and the medical supplies industry.
+ 
                 </p>
-                <button class="btn btn-primary rounded-pill m-auto slideanim" style="width: 130px;">Learn More</button>
+                <button class="btn btn-primary shadow rounded-pill m-auto slideanim" style="width: 130px;">Learn More</button>
             </div>
             <div class="h-100 about-bg z-0 position-absolute"></div>
           </div>
+          <div class="row gap-5" style="margin-top: 120px;">
+            <div class="col-md p-4 aboutus-card">
+              <img src="./img/svg/ventilator_alt.svg" alt="" width="70" class="m-auto" style="filter: brightness(0) saturate(100%) invert(12%) sepia(31%) saturate(7003%) hue-rotate(220deg) brightness(101%) contrast(108%);">
+             <h3 class="mb-4">
+              Experience Unmatched Quality and Reliability
+             </h3>
+             <p>Our products are meticulously tested and manufactured to the highest industry standards, ensuring safety and effectiveness.</p>
+            </div>
+            <div class="col-md p-4 aboutus-card">
+              <img src="./img/svg/oxygen_tank.svg" alt="" width="70" class="m-auto" style="filter: brightness(0) saturate(100%) invert(12%) sepia(31%) saturate(7003%) hue-rotate(220deg) brightness(101%) contrast(108%);">
+              <h3 class="mb-4">
+                Transforming Healthcare Through Innovation
+              </h3>
+              <p>We are committed to driving positive change in the healthcare industry by delivering cutting-edge solutions.</p>
+             </div>
+             <div class="col-md p-4 aboutus-card">
+              <img src="./img/svg/stethoscope.svg" alt="" width="70" class="m-auto">
+              <h3 class="mb-4">
+                Partner with Us for Better Healthcare Solutions
+              </h3>
+              <p>Join our network of healthcare providers and experience the benefits of our comprehensive product portfolio.</p>
+             </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="product-sec pb-5">
+      <div class="container">
+  
+  
+        <div class="row mb-5 pt-5">
+          <div class="col p-5 ">
+           <h1 class="prod-h1"> Discover the Power of Our Innovative Products</h1>
+          </div>
+          <div class="col pt-5 " >
+            <p class="prod-p">At Phil-Orient Pharma and Medical Supplies Trading, we provide a wide range of high-quality pharmaceutical and medical supplies. Our products are designed to meet the needs of healthcare professionals and patients alike. With our innovative solutions, you can expect superior performance and exceptional results.</p>
+          </div>
+        </div>
+        <ul class="list-unstyled d-flex product-list mb-5">
+          <li>
+           <div class="position-relative product-card">
+            <img src="./img/product/Ventilator-Biyovent.png" alt="">
+  
+            <div class="position-absolute prod-cat" >
+              <h1 style="font-size: 43px;">
+                ANTIBIOTICS
+              </h1>
+            </div>
+            <div class="position-absolute prod-cat1" >
+              <h1>
+                ANTIBIOTICS
+              </h1>
+            </div>
+  
+            <div class="position-absolute item-type">
+              <p>PHARMACEUTICAL</p>
+            </div>
+           </div>
+          </li>
+          <li>
+            <div class="position-relative product-card shadow">
+             <img src="./img/product/Ventilator-Biyovent.png" alt="">
+   
+             <div class="position-absolute prod-cat text-center" >
+               <h1>
+                Oxygen Generator
+               </h1>
+             </div>
+             <div class="position-absolute prod-cat1" >
+               <h1>
+                Oxygen Generator
+               </h1>
+             </div>
+   
+             <div class="position-absolute item-type">
+               <p>EQUIPMENT</p>
+             </div>
+            </div>
+           </li>
+           <li>
+            <div class="position-relative product-card shadow">
+             <img src="./img/product/Ventilator-Biyovent.png" alt="">
+   
+             <div class="position-absolute prod-cat" >
+               <h1>
+                Reagents
+               </h1>
+             </div>
+             <div class="position-absolute prod-cat1" >
+               <h1>
+                 Medical
+               </h1>
+             </div>
+   
+             <div class="position-absolute item-type">
+               <p>SUPPLIES</p>
+             </div>
+            </div>
+           </li>
+           <li>
+            <div class="position-relative product-card shadow">
+             <img src="./img/product/Ventilator-Biyovent.png" alt="">
+   
+             <div class="position-absolute prod-cat" >
+               <h1>
+                 Medical
+               </h1>
+             </div>
+             <div class="position-absolute prod-cat1" >
+               <h1>
+                 Medical
+               </h1>
+             </div>
+   
+             <div class="position-absolute item-type">
+               <p>DENTAL</p>
+             </div>
+            </div>
+           </li>
+           
+        
+        </ul>
+            
       </div>
     </section>
     <section class="services-sec " id="services">
@@ -230,7 +377,7 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="col-md-2">
+                          <!-- <div class="col-md-2">
                               <div class="right_conatct_social_icon d-flex align-items-end">
                                  <div class="socil_item_inner d-flex">
                                     <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
@@ -238,23 +385,32 @@
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                  </div>
                               </div>
-                          </div>
+                          </div> -->
                       </div>
                       <div class="contact_info_sec col">
                           <h4>Contact Info</h4>
                           <div class="d-flex info_single align-items-center">
                               <i class="fas fa-headset"></i>
-                              <span>+91 8009 054294</span>
+                              <span>0917 154 6305</span>
                           </div>
                           <div class="d-flex info_single align-items-center">
                               <i class="fas fa-envelope-open-text"></i>
-                              <span>info@flightmantra.com</span>
+                              <span>philorientpharma@gmail.com</span>
                           </div>
+                         
                           <div class="d-flex info_single align-items-center">
-                              <i class="fas fa-map-marked-alt"></i>
-                              <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
-                          </div>
-          
+                            <i class="fab fa-facebook-square"></i>
+                            <span>facebook.com</span>
+                        </div>
+   
+                      <div class="d-flex info_single align-items-center">
+                        <i class="fab fa-twitter"></i>
+                        <span>info@flightmantra.com</span>
+                    </div>
+                    <div class="d-flex info_single align-items-center">
+                      <i class="fas fa-map-marked-alt"></i>
+                      <span>Unit G-2 GJM Building, Cebu-North Coastal Road, Tayud, Liloan, Cebu, Philippines, 6002</span>
+                  </div>
                       </div>
                   </div>
               </div>
@@ -270,7 +426,7 @@
                       <h4 >Find Us on Google Map</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quo beatae quasi assumenda, expedita aliquam minima tenetur maiores neque incidunt repellat aut voluptas hic dolorem sequi ab porro, quia error.</p>
                       <div class="map_bind">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.5287219154216!2d125.60290094367271!3d7.064524974784814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d78c3c50cd1%3A0xe2da0fc53e9c675f!2sDavao%20City%20Hall!5e0!3m2!1sen!2sph!4v1703761474930!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"  aria-hidden="false" tabindex="0"referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.581648582351!2d123.98835339592557!3d10.375296219250357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9bd42559eccd1%3A0x17e50e665699f0a0!2sGJM%20BLDG.!5e0!3m2!1sen!2sph!4v1704598977699!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" frameborder="0" loading="lazy" aria-hidden="false" tabindex="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
                       </div>
                   </div>
               </div>
@@ -321,6 +477,20 @@
       </div>
     </footer>
     <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
+    var navbar = document.getElementById('navbar');
+    var scrollPosition = window.scrollY;
+
+    // Adjust the scroll threshold as needed
+    if (scrollPosition > 100) {
+      navbar.style.backgroundColor = '#EBFFE7'; // Change the background color on scroll
+    } else {
+      navbar.style.backgroundColor = 'transparent'; // Revert to the original background color
+    }
+  });
+});
+
       var url =
         "http://newsapi.org/v2/everything?" +
         "q=health&" +
