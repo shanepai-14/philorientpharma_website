@@ -552,6 +552,15 @@ button.contact_form_submit {
   }
 }
 @media (max-width: 768px) {
+ .aboutus-con{
+  padding: 20px;
+ }
+  .prod-h1{
+    text-align: center;
+  }
+  .prod-p{
+    text-align: center;
+  }
   .nav-link:hover {
     color: var(--primary-color);
     transform: translate(5px);
@@ -834,6 +843,7 @@ button.contact_form_submit {
 }
 .product-list {
   gap: 20px;
+  flex-wrap: wrap;
 }
 .prod-cat1 {
   width: auto;
