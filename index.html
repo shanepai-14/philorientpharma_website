@@ -26,7 +26,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
@@ -120,7 +122,7 @@
     </section>
   </div>
  
-    <section class="bg-white pt-5" id="aboutus">
+    <section class="bg-white pt-5 aboutus" id="aboutus" >
       <div class="container " style="margin-bottom: 227px;">
         <h1 class="text-center mb-5 about-h1 slideanim">About Us</h1>
 
@@ -142,7 +144,7 @@
             </div>
             <div class="h-100 about-bg z-0 position-absolute"></div>
           </div>
-          <div class="row gap-5" style="margin-top: 120px;">
+          <div class="row gap-5" style="margin-top: 182px;">
             <div class="col-md p-4 aboutus-card">
               <img src="./img/svg/ventilator_alt.svg" alt="" width="70" class="m-auto" style="filter: brightness(0) saturate(100%) invert(12%) sepia(31%) saturate(7003%) hue-rotate(220deg) brightness(101%) contrast(108%);">
              <h3 class="mb-4">
@@ -169,7 +171,7 @@
       </div>
     </section>
     <section class="product-sec pb-5">
-      <div class="container">
+      <div class="container" style="margin-bottom: 150px;">
   
   
         <div class="row mb-5 pt-5">
@@ -181,7 +183,7 @@
           </div>
         </div>
         <ul class="list-unstyled d-flex product-list mb-5">
-          <li>
+          <li class="product-item">
            <div class="position-relative product-card">
             <img src="./img/product/Ventilator-Biyovent.png" alt="">
   
@@ -201,7 +203,7 @@
             </div>
            </div>
           </li>
-          <li>
+          <li class="product-item">
             <div class="position-relative product-card shadow">
              <img src="./img/product/Ventilator-Biyovent.png" alt="">
    
@@ -221,7 +223,7 @@
              </div>
             </div>
            </li>
-           <li>
+           <li class="product-item">
             <div class="position-relative product-card shadow">
              <img src="./img/product/Ventilator-Biyovent.png" alt="">
    
@@ -241,7 +243,7 @@
              </div>
             </div>
            </li>
-           <li>
+           <li class="product-item">
             <div class="position-relative product-card shadow">
              <img src="./img/product/Ventilator-Biyovent.png" alt="">
    
@@ -280,7 +282,7 @@
         </p>
 
         <ul class="services-list">
-          <li class="slideanim">
+          <li class="services-card">
             <div class="card-item">
               <div>
                 <img src="./img/4.png" alt="" />
@@ -292,7 +294,7 @@
               </p>
             </div>
           </li>
-          <li class="slideanim">
+          <li class="services-card">
             <div class="card-item">
               <div>
                 <img src="./img/2.png" alt="" />
@@ -304,7 +306,7 @@
               </p>
             </div>
           </li>
-          <li class="slideanim">
+          <li class="services-card">
             <div class="card-item">
               <div>
                 <img src="./img/1.png" alt="" />
@@ -344,13 +346,16 @@
               </div>
             </div>
           </div> -->
-          <div class="col news-col slideanim"><div class="card" style="width: 18rem;"><img class="card-img-top" src="https://s.yimg.com/ny/api/res/1.2/rMn9Uwq87QsDOhNXSQu50w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MTc-/https://s.yimg.com/os/creatr-images/2019-11/711ed980-00b1-11ea-acfd-294bb493c9cd" alt="Card image cap"><div class="card-body"><h5 class="card-title">Android phones can now send medical data during 911 calls</h5><p class="card-text">Some Android users are getting an update that could literally save their lives one day. Android users who have a device with the Personal Safety app can now opt-in to sharing medical information with first responders when calling or texting 911. The feature h…</p><a class="link article-link" href="https://www.engadget.com/android-phones-can-now-send-medical-data-during-911-calls-104518043.html">Read more   <img src="./img/arrow-right.svg" width="16" height="16" alt="Arrow Right" class="bi bi-arrow-right"></a></div></div></div>
+          <div class="col news-col blog-card"><div class="card" style="width: 18rem;"><img class="card-img-top" src="./img/closeup-view-pharmacist-hand-taking-medicine-box-from-shelf-drug-store.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">What is the role of pharmaceutical companies in our heathcare?</h5><p class="card-text">Pharmaceuticals play a crucial role in our healthcare space for several reasons: 1.	Treatment of diseases: Pharmaceuticals are essential for treating various diseases and medical conditions. They help alleviate symptoms, manage chronic illnesses, and even cure certain diseases. From antibiotics to antivirals, painkillers to immunosuppressants, pharmaceuticals provide the necessary medications to improve health outcomes and save lives
+          </p><a class="link article-link" href="https://www.engadget.com/android-phones-can-now-send-medical-data-during-911-calls-104518043.html">Read more   <img src="./img/arrow-right.svg" width="16" height="16" alt="Arrow Right" class="bi bi-arrow-right"></a></div></div></div>
 
-          <div class="col news-col slideanim"><div class="card" style="width: 18rem;"><img class="card-img-top" src="https://s.yimg.com/ny/api/res/1.2/9LYwET6miPrhp5ZBo6wKsQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-12/a3efffe0-9e93-11ee-bb5f-6d12f0115d82" alt="Card image cap"><div class="card-body"><h5 class="card-title">The DOJ says it disrupted the Blackcat ransomware group</h5><p class="card-text">The US Department of Justice says it has disrupted the Blackcat ransomware group. Also called ALPHV or Noberus, the hackers have targeted over 1,000 computer networks and extorted millions of dollars from victims. Bloomberg reports its members were known for …</p><a class="link article-link" href="https://www.engadget.com/the-doj-says-it-disrupted-the-blackcat-ransomware-group-174755936.html">Read more   <img src="./img/arrow-right.svg" width="16" height="16" alt="Arrow Right" class="bi bi-arrow-right"></a></div></div></div>
+          <div class="col news-col blog-card"><div class="card" style="width: 18rem;"><img class="card-img-top" src="https://files01.pna.gov.ph/category-list/2022/11/28/pharma.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">PH pharma industry seen to hit P216-B in 2024</h5><p class="card-text">HEALTH SPENDING. The country’s pharmaceutical industry is expected to grow up to PHP216 billion by 2024.Trade Undersecre... and Board of Investments (BOI) Managing Head Ceferino Rodolfo said Tuesday (April 19, 2022) that health expenditure is on the rise, with consumer health spending growth averaging 11 percent in the last three years.</p><a class="link article-link" href="https://www.engadget.com/the-doj-says-it-disrupted-the-blackcat-ransomware-group-174755936.html">Read more   <img src="./img/arrow-right.svg" width="16" height="16" alt="Arrow Right" class="bi bi-arrow-right"></a></div></div></div>
 
-          <div class="col news-col slideanim"><div class="card" style="width: 18rem;"><img class="card-img-top" src="https://s.yimg.com/ny/api/res/1.2/lUm39QNAgsrxDA.0OxasPw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-11/e69902d0-92d9-11ee-ae2d-ea47191386db" alt="Card image cap"><div class="card-body"><h5 class="card-title">Offworld 'company towns' are the wrong way to settle the solar system</h5><p class="card-text">Company Towns — wherein a single firm provides most or all necessary services, from housing and employment to commerce and amenities to a given community — have dotted America since before the Civil War. As we near the end of the first quarter of the 21st cen…</p><a class="link article-link" href="https://www.engadget.com/hitting-the-books-a-city-on-mars-kelly-and-zach-weinersmith-penguin-153023805.html">Read more   <img src="./img/arrow-right.svg" width="16" height="16" alt="Arrow Right" class="bi bi-arrow-right"></a></div></div></div>
+          <div class="col news-col blog-card"><div class="card" style="width: 18rem;"><img class="card-img-top" src="https://healthcareasiamagazine.com/sites/default/files/styles/article_node_main_image/public/2021-04/medical-device_1.jpg?itok=WF1pXXIT" alt="Card image cap"><div class="card-body"><h5 class="card-title">Philippine medical device market to grow 9% by 2024: Fitch </h5><p class="card-text">It will benefit from a strong economic performance over the next five years.
+            Despite ongoing hardships due to COVID-19 this year, the medical device market in the Philippines is expected to see a compound annual growth rate of 9% in peso terms or 8.8% in US dollar terms and rise to $884.3m by end-2024, reports Fitch Solutions
+             we near the end of the first quarter of the 21st cen…</p><a class="link article-link" href="https://healthcareasiamagazine.com/healthcare/news/philippine-medical-device-market-grow-9-2024-fitch">Read more   <img src="./img/arrow-right.svg" width="16" height="16" alt="Arrow Right" class="bi bi-arrow-right"></a></div></div></div>
 
-          <div class="col news-col slideanim"><div class="card" style="width: 18rem;"><img class="card-img-top" src="https://s.yimg.com/ny/api/res/1.2/4gTyYW.EWPwh6Esw_9VVfw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://s.yimg.com/os/creatr-uploaded-images/2023-11/747f42d0-8c9f-11ee-b5af-4ee6bf4cbd70" alt="Card image cap"><div class="card-body"><h5 class="card-title">The 70 best Cyber Monday deals you can get from Amazon, Target and others</h5><p class="card-text">While Cyber Monday sits in the shadow of Black Friday every year, it's certainly not a shopping day you should ignore. Whether you dropped some money on new tech a few days ago or not, Cyber Monday presents a great opportunity to grab anything you may have fo…</p><a class="link article-link" href="https://www.engadget.com/the-70-best-cyber-monday-deals-you-can-get-from-amazon-target-and-others-210010345.html">Read more   <img src="./img/arrow-right.svg" width="16" height="16" alt="Arrow Right" class="bi bi-arrow-right"></a></div></div></div>
+          <div class="col news-col blog-card"><div class="card" style="width: 18rem;"><img class="card-img-top" src="https://files01.pna.gov.ph/category-list/2020/12/08/0-02-06-087d63877530429ff7b87da85bd4effc1b898bf83fccb5e8189055bd58d3a372f718fa81.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">Gov’t allots P22.98B to improve health facilities nationwide in 2024</h5><p class="card-text">MANILA – The government will earmark around PHP22.98 billion for the improvement of the country’s health facilities and services in 2024, the Department of Budget and Management (DBM) said Wednesday</p><a class="link article-link" href="https://www.pna.gov.ph/articles/1212459#:~:text=98B%20to%20improve%20health%20facilities%20nationwide%20in%202024,-By%20Ruth%20Abbey&text=MANILA%20%E2%80%93%20The%20government%20will%20earmark,Management%20(DBM)%20said%20Wednesday.">Read more   <img src="./img/arrow-right.svg" width="16" height="16" alt="Arrow Right" class="bi bi-arrow-right"></a></div></div></div>
 
         </div>
       
@@ -491,100 +496,146 @@
   });
 });
 
-      var url =
-        "http://newsapi.org/v2/everything?" +
-        "q=health&" +
-        "sortBy=popularity&" +
-        "pageSize=50&" +
-        "apiKey=f0da2bc8de044484ade07e7d33bc9021";
+      // var url =
+      //   "http://newsapi.org/v2/everything?" +
+      //   "q=health&" +
+      //   "sortBy=popularity&" +
+      //   "pageSize=50&" +
+      //   "apiKey=f0da2bc8de044484ade07e7d33bc9021";
 
-      var req = new Request(url);
+      // var req = new Request(url);
 
-      fetch(req)
-        .then(function (response) {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          return response.json();
-        })
-        .then(function (data) {
-          if (data.articles.length === 0) {
-            console.log("No health articles found.");
-          } else {
-            displayNewsWithImages(data.articles.slice(0, 50));
-            console.log(data.articles); // Display the first 3 articles with images
-          }
-        })
-        .catch(function (error) {
-          console.error("Error fetching health news:", error);
-        });
+      // fetch(req)
+      //   .then(function (response) {
+      //     if (!response.ok) {
+      //       throw new Error("Network response was not ok");
+      //     }
+      //     return response.json();
+      //   })
+      //   .then(function (data) {
+      //     if (data.articles.length === 0) {
+      //       console.log("No health articles found.");
+      //     } else {
+      //       displayNewsWithImages(data.articles.slice(0, 50));
+      //       console.log(data.articles); // Display the first 3 articles with images
+      //     }
+      //   })
+      //   .catch(function (error) {
+      //     console.error("Error fetching health news:", error);
+      //   });
 
-      function displayNewsWithImages(articles) {
-        const newsCardContainer = document.getElementById("news-card");
-        var i = 0;
-        for (let index = 0; index < articles.length; index++) {
-          const article = articles[index];
-          if (article.urlToImage) {
-            // Check if the article has an image
-            i++;
-            console.log(i);
+      // function displayNewsWithImages(articles) {
+      //   const newsCardContainer = document.getElementById("news-card");
+      //   var i = 0;
+      //   for (let index = 0; index < articles.length; index++) {
+      //     const article = articles[index];
+      //     if (article.urlToImage) {
+      //       // Check if the article has an image
+      //       i++;
+      //       console.log(i);
 
-            const cardContainer = document.createElement("div");
-            cardContainer.classList.add("col", "news-col","slideanim");
+      //       const cardContainer = document.createElement("div");
+      //       cardContainer.classList.add("col", "news-col","blog-card");
 
-            const cardElement = document.createElement("div");
-            cardElement.classList.add("card");
-            cardElement.style.width = "18rem";
+      //       const cardElement = document.createElement("div");
+      //       cardElement.classList.add("card");
+      //       cardElement.style.width = "18rem";
 
-            const imgElement = document.createElement("img");
-            imgElement.classList.add("card-img-top");
-            imgElement.src = article.urlToImage;
-            imgElement.alt = "Card image cap";
+      //       const imgElement = document.createElement("img");
+      //       imgElement.classList.add("card-img-top");
+      //       imgElement.src = article.urlToImage;
+      //       imgElement.alt = "Card image cap";
 
-            const cardBodyElement = document.createElement("div");
-            cardBodyElement.classList.add("card-body");
+      //       const cardBodyElement = document.createElement("div");
+      //       cardBodyElement.classList.add("card-body");
 
-            const titleElement = document.createElement("h5");
-            titleElement.classList.add("card-title");
-            titleElement.textContent = article.title;
+      //       const titleElement = document.createElement("h5");
+      //       titleElement.classList.add("card-title");
+      //       titleElement.textContent = article.title;
 
-            const textElement = document.createElement("p");
-            textElement.classList.add("card-text");
-            textElement.textContent = article.description;
+      //       const textElement = document.createElement("p");
+      //       textElement.classList.add("card-text");
+      //       textElement.textContent = article.description;
 
-            const linkElement = document.createElement("a");
-            linkElement.classList.add("link");
-            linkElement.classList.add("article-link");
-            linkElement.href = article.url;
-            linkElement.textContent = "Read more  ";
+      //       const linkElement = document.createElement("a");
+      //       linkElement.classList.add("link");
+      //       linkElement.classList.add("article-link");
+      //       linkElement.href = article.url;
+      //       linkElement.textContent = "Read more  ";
 
-            const svgElement = document.createElement("img");
-            svgElement.setAttribute("src", "./img/arrow-right.svg");
-            svgElement.setAttribute("width", "16");
-            svgElement.setAttribute("height", "16");
-            svgElement.setAttribute("alt", "Arrow Right");
-            svgElement.classList.add("bi", "bi-arrow-right");
+      //       const svgElement = document.createElement("img");
+      //       svgElement.setAttribute("src", "./img/arrow-right.svg");
+      //       svgElement.setAttribute("width", "16");
+      //       svgElement.setAttribute("height", "16");
+      //       svgElement.setAttribute("alt", "Arrow Right");
+      //       svgElement.classList.add("bi", "bi-arrow-right");
 
-            // Append the arrow-right SVG after the "Read more" text
-            linkElement.appendChild(document.createTextNode(" ")); // Add a space for spacing
-            linkElement.appendChild(svgElement);
-            // Append elements to the card and card container
-            cardBodyElement.appendChild(titleElement);
-            cardBodyElement.appendChild(textElement);
-            cardBodyElement.appendChild(linkElement);
+      //       // Append the arrow-right SVG after the "Read more" text
+      //       linkElement.appendChild(document.createTextNode(" ")); // Add a space for spacing
+      //       linkElement.appendChild(svgElement);
+      //       // Append elements to the card and card container
+      //       cardBodyElement.appendChild(titleElement);
+      //       cardBodyElement.appendChild(textElement);
+      //       cardBodyElement.appendChild(linkElement);
 
-            cardElement.appendChild(imgElement);
-            cardElement.appendChild(cardBodyElement);
+      //       cardElement.appendChild(imgElement);
+      //       cardElement.appendChild(cardBodyElement);
 
-            cardContainer.appendChild(cardElement);
-            newsCardContainer.appendChild(cardContainer);
+      //       cardContainer.appendChild(cardElement);
+      //       newsCardContainer.appendChild(cardContainer);
 
-            if (i === 4) {
-              break;
-            }
-          }
-        }
-      }
+      //       if (i === 4) {
+      //         break;
+      //       }
+      //     }
+      //   }
+      // }
     </script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+ 
+  // Select all items
+  const items = document.querySelectorAll('.product-item');
+  const aboutusCards = document.querySelectorAll('.aboutus-card');     
+  const cardItem = document.querySelectorAll('.services-card');  
+  const card = document.querySelectorAll('.blog-card');         
+  // Function to stagger animation
+  // function staggerAnimation() {
+  //   gsap.from(items, {
+  //     opacity: 0,
+  //     y: 50,
+  //     stagger: 0.4, // Stagger the animations by 0.2 seconds
+  //     duration: 1,
+   
+  //     ease: 'power2.out',
+  //     scrollTrigger: {
+  //       trigger: '.product-sec',
+  //       start: 'top 80%', // Adjust the start position based on your layout
+  //       toggleActions:"restart none none none",
+  //     },
+  //   });
+  // }
+
+  function staggerAnimation(elements,container) {
+    gsap.from(elements, {
+      opacity: 0,
+      y: 100,
+      stagger: 0.2,
+      duration: 1,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: container,
+        start: 'top 70%',
+        toggleActions:"restart none none none",
+      },
+    });
+  }
+  staggerAnimation(card,'.sec-blog');
+  staggerAnimation(cardItem,'.services-sec');
+  staggerAnimation(items,'.product-sec');
+  staggerAnimation(aboutusCards,'.aboutus');
+ 
+</script>
   </body>
 </html>
