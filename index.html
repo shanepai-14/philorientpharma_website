@@ -43,7 +43,7 @@
       
         <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a href="./index.html" class="navbar-brand link logo"><img src="./img/phil-logo.png" alt="" width="50px">Phil-Orient Pharma</a>
+    <a href="./index.html" class="navbar-brand link logo"><img src="./img/phil-logo.png" alt="" width="50px" style="margin-right: 5px;">Phil-Orient Pharma</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -213,7 +213,7 @@
 
             <ul class="list-unstyled d-flex product-list justify-content-center mb-5">
               <li class="product-item">
-               <div class="position-relative product-card">
+               <div class="position-relative product-card shadow">
                 <img src="./img/product/Ventilator-Biyovent.png" alt="">
       
                 <div class="position-absolute prod-cat" >
@@ -601,7 +601,31 @@
           </div>
         </div>
       </div>
+      <div class="carousel-container">
+  <div id="image-modal">
+    <img src="" alt="Modal Image" />
+    <button class="close-modal">Close</button>
+  </div>
+</div>
     </footer>
+    <script>
+      const images = document.querySelectorAll('.product-card img');
+const modal = document.getElementById('image-modal');
+const modalImage = modal.querySelector('img');
+const closeModalButton = modal.querySelector('.close-modal');
+
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    modalImage.src = image.src;
+    modalImage.alt = image.alt;
+    modal.style.display = 'flex';
+  });
+});
+
+closeModalButton.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+    </script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', function () {
