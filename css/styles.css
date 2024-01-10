@@ -874,14 +874,17 @@ button.contact_form_submit {
   bottom: 0;
   background-color: var(--coffe);
   width: 100%;
-  padding-left: 30px;
+  
   border-bottom-left-radius: 25px;
 }
 .item-type p {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-family: 'Manrope';
+  font-weight: 700;
   color: var(--st-tropaz);
+  text-align: center;
+  font-size: 17px;
 }
 .prod-h1 {
   color: var(--st-tropaz);
@@ -891,6 +894,7 @@ button.contact_form_submit {
 .prod-p {
   color: var(--st-tropaz);
   font-size: 19px;
+  
 
 }
 .aboutus-card h3,p{
