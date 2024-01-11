@@ -28,6 +28,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -63,7 +65,7 @@
     <div class="container d-flex justify-content-center align-content-center hero-div" style="padding-top: 30px;">
        <div class="row d-flex justify-content-center h-100 position-relative">
        
-       <div class="col-sm-7 col-md-10 col-lg-7  h-100 about-col" >
+       <div class="col-sm-7 col-md-10 col-lg-7  h-100 about-col slideanim" >
        <div class="about-hero"></div>
         <h1 class="text-center" style="position: relative;">
           About us
@@ -78,7 +80,7 @@
     </div>
     <div class="overlay-aboutus"></div>
 </section>
-<section  class="bg-info h-auto" >
+<section  class=" h-auto" >
   <div class="row text-center " >
     <div class="col-sm mission" >
       <div class="container  h-100 ">
@@ -97,9 +99,9 @@
   </div>
 
 </section>
-<section>
-  <div class="mt-5">
-    <ul class="list-unstyled d-flex values-list justify-content-center">
+<section class="values-sec">
+  <div class="mt-5 ">
+    <ul class="list-unstyled d-flex values-list justify-content-center ">
       <li class="values-card">
                  <h1>P</h1>
                  <p>Passion for Health</p>
@@ -145,7 +147,7 @@
   </div>
   <div class="container pt-5 mb-5">
     <div class="row d-flex justify-content-center">
-      <div class="col-md-4 d-flex justify-content-center align-content-center">
+      <div class="col-md-4 d-flex justify-content-center align-content-center company-logo">
         <img src="./img/ppmst-dark.jpg" alt="" width="100%"  style="  background: rgb(236, 236, 236); box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
       </div>
       <div class="col-md-6 culture">
@@ -321,5 +323,118 @@
 
     
     </script> -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+     
+      // Select all items
+      const valuesitems = document.querySelectorAll('.values-card');
+      
+      // function staggerAnimation() {
+      //   gsap.from(items, {
+      //     opacity: 0,
+      //     y: 50,
+      //     stagger: 0.4, // Stagger the animations by 0.2 seconds
+      //     duration: 1,
+       
+      //     ease: 'power2.out',
+      //     scrollTrigger: {
+      //       trigger: '.product-sec',
+      //       start: 'top 80%', // Adjust the start position based on your layout
+      //       toggleActions:"restart none none none",
+      //     },
+      //   });
+      // }
+    
+      function staggerAnimation(elements,container) {
+        gsap.from(elements, {
+          opacity: 0,
+          y: 100,
+          stagger: 0.2,
+          duration: 1,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: container,
+            start: 'top 70%',
+            toggleActions:"restart none none none",
+          },
+        });
+      }
+      staggerAnimation(valuesitems,'.values-sec');
+  
+      gsap.fromTo(
+  ".mission",
+  {
+    x: "-100vw", // Adjust based on your initial offset
+  },
+  {
+    x: "0", // Element animates to its original position
+    opacity: 1,
+    ease: 'power2.out', // Optional fade-in effect
+    scrollTrigger: {
+      trigger: ".hero", // Trigger on the element itself
+      start: "top 100%", // Animate when fully visible
+      toggleActions: "restart none none none",
+      // Finish when no longer visible
+    
+    },
+  }
+);
+gsap.fromTo(
+  ".vision",
+  {
+    x: "100vw", // Adjust based on your initial offset
+  },
+  {
+    x: "0", // Element animates to its original position
+    opacity: 1,
+    // Optional fade-in effect
+    scrollTrigger: {
+      trigger: ".hero", // Trigger on the element itself
+      start: "top 100%", // Animate when fully visible
+      toggleActions: "restart none none none",
+      // Finish when no longer visible
+    
+    },
+  }
+);
+gsap.fromTo(
+  ".culture",
+  {
+    x: "100vw", // Adjust based on your initial offset
+  },
+  {
+    x: "0", // Element animates to its original position
+    opacity: 1,
+    // Optional fade-in effect
+    scrollTrigger: {
+      trigger: ".culture", // Trigger on the element itself
+      start: "top 100%", // Animate when fully visible
+      toggleActions: "restart none none none",
+      // Finish when no longer visible
+    
+    },
+  }
+);
+gsap.fromTo(
+  ".company-logo",
+  {
+    x: "-100vw", // Adjust based on your initial offset
+  },
+  {
+
+    x: "0", // Element animates to its original position
+    opacity: 1,
+    // Optional fade-in effect
+    scrollTrigger: {
+      trigger: ".company-logo", // Trigger on the element itself
+      start: "top 100%", // Animate when fully visible
+      toggleActions: "restart none none none",
+      // Finish when no longer visible
+    
+    },
+  }
+);
+
+    </script>
   </body>
 </html>

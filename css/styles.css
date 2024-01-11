@@ -884,6 +884,7 @@ color: var(--st-tropaz);
   padding: 45px;
   background-color: var(--coffe);
   color: var(--st-tropaz);
+  transform: translateX(-100vw);
 }
 .mission p {
   font-weight: 400;
@@ -894,6 +895,7 @@ color: var(--st-tropaz);
   padding: 45px;
   color: var(--coffe);
   background-color: var(--fun-blue);
+  transform: translateX(100vw);
 }
 .vision p{
   color: var(--coffe);
