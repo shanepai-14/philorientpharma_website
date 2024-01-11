@@ -780,7 +780,89 @@ closeModalButton.addEventListener('click', () => {
   staggerAnimation(cardItem,'.services-sec');
   staggerAnimation(items,'.product-sec');
   staggerAnimation(aboutusCards,'.aboutus');
- 
+  gsap.fromTo(
+  ".about-bg",
+  {
+    x: "100vw", // Adjust based on your initial offset
+  },
+  {
+    x: "0", // Element animates to its original position
+    opacity: 1,
+    // Optional fade-in effect
+    scrollTrigger: {
+      trigger: ".about-bg", // Trigger on the element itself
+      start: "top 100%", // Animate when fully visible
+      toggleActions: "restart none none none",
+      // Finish when no longer visible
+    
+    },
+    duration: 1, // Adjust duration for desired speed
+    ease: "power3.out"
+  }
+);
+gsap.fromTo(
+  ".poster",
+  {
+    x: "-100vw",
+    opacity:0, // Adjust based on your initial offset
+  },
+  {
+    x: "0", // Element animates to its original position
+    opacity:1 ,
+  
+    // Optional fade-in effect
+    scrollTrigger: {
+      trigger: ".poster", // Trigger on the element itself
+      start: "top 100%", // Animate when fully visible
+      toggleActions: "restart none none none",
+      // Finish when no longer visible
+    
+    },
+    duration: 1, // Adjust duration for desired speed
+    ease: "power3.out"
+  }
+);
+gsap.fromTo(
+  ".prod-h1",
+  {
+    x: "100vw", // Adjust based on your initial offset
+  },
+  {
+    x: "0", // Element animates to its original position
+    opacity: 1,
+    // Optional fade-in effect
+    scrollTrigger: {
+      trigger: ".prod-h1", // Trigger on the element itself
+      start: "top 100%", // Animate when fully visible
+      toggleActions: "restart none none none",
+      // Finish when no longer visible
+    
+    },
+    duration: 1, // Adjust duration for desired speed
+    ease: "power3.out"
+  }
+);
+gsap.fromTo(
+  ".prod-p",
+  {
+    x: "100vw",
+    opacity: 0.5, // Adjust based on your initial offset
+  },
+  {
+    x: "0", // Element animates to its original position
+    opacity: 1,
+    // Optional fade-in effect
+    scrollTrigger: {
+      trigger: ".prod-p", // Trigger on the element itself
+      start: "top 100%", // Animate when fully visible
+      toggleActions: "restart none none none",
+      // Finish when no longer visible
+    
+    },
+    duration: 1, // Adjust duration for desired speed
+    ease: "power3.out"
+  }
+);
 </script>
   </body>
 </html>
