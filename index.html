@@ -36,12 +36,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-  <div>
-    <header id="navbar">
+
+    <header id="navbar" >
       <div class="container">
  
       
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
     <a href="./index.html" class="navbar-brand link logo"><img src="./img/phil-logo.png" alt="" width="50px" style="margin-right: 5px;">Phil-Orient Pharma</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,14 +50,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item"><a href="./index.html" class="link nav-link active-link">Home</a></li>
-              <li class="nav-item"><a href="./aboutus.html" class="link nav-link">About Us</a></li>
-              <li class="nav-item"><a href="#services" class="link nav-link">Services</a></li>
-              <li class="nav-item"><a href="./blog.html" class="link nav-link">Blog</a></li>
+              <li class="nav-item"><a href="./aboutus.html" class="link nav-link ">About Us</a></li>
+              <li class="nav-item"><a href="./index.html#services" class="link nav-link">Services</a></li>
+              <li class="nav-item"><a href="./blog.html" class="link nav-link ">Blog</a></li>
             </ul>
-            <div ><p>philorientpharma@gmail.com</p></div>
+       
             <form class="form-inline my-2 my-lg-0">
-             
-              <button type="button" class="contact-btn rounded-pill" ><a href="#contactus" class="link"><i class="bi bi-telephone"></i>&nbsp;   Contact Us</a></button>
+              <button type="button" class="contact-btn rounded-pill" data-modal-open><a href="./index.html#contactus" class="link"><i class="bi bi-telephone"></i>&nbsp; Contact Us</a></button>
             </form>
       </ul>
     
@@ -69,7 +68,7 @@
 
     <section class="hero">
  
-   <div >
+   <div  hidden>
     <img src="./img/svg/ventilator_alt.svg" alt="" width="50" class="position-absolute ventilator" >
     <img src="./img/svg/wheelchair_alt.svg" alt="" width="50" class="position-absolute wheelchair" style="top:20%; left:20%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
     <img src="./img/svg/virus_lab_research_syringe.svg" alt="" width="50" class="position-absolute" style="top:12%; left:40%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
@@ -81,7 +80,7 @@
     <img src="./img/svg/surgical_sterilization.svg" alt="" width="50" class="position-absolute surgical" style="top:55%; left:25%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
     <img src="./img/svg/intravenous_bag.svg" alt="" width="50" class="position-absolute intravenous" style="top:46%; left:10%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
    </div>
-   <img src="./img/svg/oxygen_tank.svg" alt="" width="50" class="position-absolute" style="top:18%; left:29.7%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);">
+   <img src="./img/svg/oxygen_tank.svg" alt="" width="50" class="position-absolute" style="top:18%; left:29.7%; filter: invert(94%) sepia(14%) saturate(362%) hue-rotate(53deg) brightness(92%) contrast(91%);" hidden>
       <div class="overlay"></div>
       
       <div class="hero-backg position-absolute z-n1 overflow-hidden h-100">
@@ -298,96 +297,7 @@
           </div>
         </div>
         
-        <!-- <div class="row">
-         
-          <div class="col">
-            <ul class="list-unstyled d-flex product-list justify-content-center mb-5">
-              <li class="product-item">
-               <div class="position-relative product-card">
-                <img src="./img/product/Ventilator-Biyovent.png" alt="">
-      
-                <div class="position-absolute prod-cat" >
-                  <h1 style="font-size: 43px;">
-                    ANTIBIOTICS
-                  </h1>
-                </div>
-                <div class="position-absolute prod-cat1" >
-                  <h1>
-                    ANTIBIOTICS
-                  </h1>
-                </div>
-      
-                <div class="position-absolute item-type">
-                  <p>PHARMACEUTICAL</p>
-                </div>
-               </div>
-              </li>
-              <li class="product-item">
-                <div class="position-relative product-card shadow">
-                 <img src="./img/product/Ventilator-Biyovent.png" alt="">
        
-                 <div class="position-absolute prod-cat text-center" >
-                   <h1>
-                    Oxygen Generator
-                   </h1>
-                 </div>
-                 <div class="position-absolute prod-cat1" >
-                   <h1>
-                    Oxygen Generator
-                   </h1>
-                 </div>
-       
-                 <div class="position-absolute item-type">
-                   <p>EQUIPMENT</p>
-                 </div>
-                </div>
-               </li>
-               <li class="product-item">
-                <div class="position-relative product-card shadow">
-                 <img src="./img/product/Ventilator-Biyovent.png" alt="">
-       
-                 <div class="position-absolute prod-cat" >
-                   <h1>
-                    Reagents
-                   </h1>
-                 </div>
-                 <div class="position-absolute prod-cat1" >
-                   <h1>
-                     Medical
-                   </h1>
-                 </div>
-       
-                 <div class="position-absolute item-type">
-                   <p>SUPPLIES</p>
-                 </div>
-                </div>
-               </li>
-               <li class="product-item">
-                <div class="position-relative product-card shadow">
-                 <img src="./img/product/Ventilator-Biyovent.png" alt="">
-       
-                 <div class="position-absolute prod-cat" >
-                   <h1>
-                     Medical
-                   </h1>
-                 </div>
-                 <div class="position-absolute prod-cat1" >
-                   <h1>
-                     Medical
-                   </h1>
-                 </div>
-       
-                 <div class="position-absolute item-type">
-                   <p>DENTAL</p>
-                 </div>
-                </div>
-               </li>
-               
-            
-            </ul>
-          </div>
-        </div> -->
-            
       </div>
     </section>
     <section class="services-sec " id="services">
@@ -503,21 +413,13 @@
                                   </div>
                               </div>
                           </div>
-                          <!-- <div class="col-md-2">
-                              <div class="right_conatct_social_icon d-flex align-items-end">
-                                 <div class="socil_item_inner d-flex">
-                                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                 </div>
-                              </div>
-                          </div> -->
+                       
                       </div>
                       <div class="contact_info_sec col">
                           <h4>Contact Info</h4>
                           <div class="d-flex info_single align-items-center">
                               <i class="fas fa-headset"></i>
-                              <span>0917 154 6305</span>
+                              <span>+63 927 500 5496</span>
                           </div>
                           <div class="d-flex info_single align-items-center">
                               <i class="fas fa-envelope-open-text"></i>
@@ -529,10 +431,7 @@
                             <span>facebook.com</span>
                         </div>
    
-                      <div class="d-flex info_single align-items-center">
-                        <i class="fab fa-twitter"></i>
-                        <span>info@flightmantra.com</span>
-                    </div>
+                 
                     <div class="d-flex info_single align-items-center">
                       <i class="fas fa-map-marked-alt"></i>
                       <span>Unit G-2 GJM Building, Cebu-North Coastal Road, Tayud, Liloan, Cebu, Philippines, 6002</span>
@@ -584,8 +483,8 @@
           <div class="col">
             <ul class="list-unstyled footer-list">
               <li class="list-title"><strong>Contacts</strong></li>
-              <li>example@gmail.com</li>
-              <li>+63 232 2323 2323</li>
+              <li>philorientpharma@gmail.com</li>
+              <li>+63 927 500 5496</li>
             </ul>
           </div>
           <div class="col">
@@ -593,7 +492,7 @@
             <ul class="list-unstyled footer-list d-flex gap-3">
               <li><a href="link"><h4><i class="bi bi-facebook"></i></h4></a></i></li>
               <li><a href="" class="link"><h4><i class="bi bi-instagram"></i></h4></a></li>
-              <li><a href="" class="link"><h4><i class="bi bi-twitter-x"></i></h4></a></li>
+          
             </ul>
           </div>
         </div>
