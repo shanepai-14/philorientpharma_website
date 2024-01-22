@@ -45,7 +45,7 @@ body {
 }
 header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   transition: all 0.3s ease;
   /* background-color: #edf5eb; */
