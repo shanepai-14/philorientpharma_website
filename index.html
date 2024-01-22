@@ -51,7 +51,8 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item"><a href="./index.html" class="link nav-link active-link">Home</a></li>
               <li class="nav-item"><a href="./aboutus.html" class="link nav-link ">About Us</a></li>
-              <li class="nav-item"><a href="./index.html#services" class="link nav-link">Services</a></li>
+          
+              <li class="nav-item"><a href="./products.html" class="link nav-link">Products</a></li>
               <li class="nav-item"><a href="./blog.html" class="link nav-link ">Blog</a></li>
             </ul> 
           
@@ -194,91 +195,35 @@
           <!-- <div class="col-sm col-md p-5 ">
            <h1 class="prod-h1 ">Discover the Power of Our Innovative Products</h1>
           </div> -->
-          <div class="col-sm col-md" >
+          <div class="col-sm col-md d-flex flex-column justify-content-between " style="height: inherit;">
             <h1 class="prod-h1 ">Discover the Power of Our Innovative Products</h1>
             <p class="prod-p">At Phil-Orient Pharma and Medical Supplies Trading, we provide a wide range of high-quality pharmaceutical and medical supplies. Our products are designed to meet the needs of healthcare professionals and patients alike. With our innovative solutions, you can expect superior performance and exceptional results.</p>
-
-            <ul class="list-unstyled d-flex product-list justify-content-center mb-5">
+             <button class="btn btn-success rounded-pill m-auto border-0 contact-btn  product-btn" style="width:200px; background: linear-gradient(to right, #7aff60, #6af54f); color: #001750;">View All Products</button>
+            <ul class="list-unstyled d-flex product-list justify-content-center mb-0">
               <li class="product-item">
                <div class="position-relative product-card shadow">
-                <img src="./img/product/Ventilator-Biyovent.png" alt="">
+                <img src="./img/product/10m3 medical oxygen generator.png" alt="">
       
-                <div class="position-absolute prod-cat" >
-                  <h1 style="font-size: 35px;">
-                    ANTIBIOTICS
-                  </h1>
-                </div>
-                <div class="position-absolute prod-cat1" >
-                  <h1>
-                    ANTIBIOTICS
-                  </h1>
-                </div>
+            
       
                 <div class="position-absolute item-type">
-                  <p>PHARMACEUTICAL</p>
+                  <p>EQUIPMENT - Medical Oxygen Generator</p>
                 </div>
                </div>
               </li>
               <li class="product-item">
                 <div class="position-relative product-card shadow">
-                 <img src="./img/product/Ventilator-Biyovent.png" alt="">
+                 <img src="./img/product/Medical-oxygen-generator.png" alt="">
        
-                 <div class="position-absolute prod-cat text-center" >
-                   <h1>
-                    Oxygen Generator
-                   </h1>
-                 </div>
-                 <div class="position-absolute prod-cat1" >
-                   <h1>
-                    Oxygen Generator
-                   </h1>
-                 </div>
+        
        
                  <div class="position-absolute item-type">
-                   <p>EQUIPMENT</p>
+                  <p>EQUIPMENT - Medical Oxygen Generator</p>
                  </div>
                 </div>
                </li>
-               <li class="product-item">
-                <div class="position-relative product-card shadow">
-                 <img src="./img/product/Ventilator-Biyovent.png" alt="">
-       
-                 <div class="position-absolute prod-cat" >
-                   <h1>
-                    Reagents
-                   </h1>
-                 </div>
-                 <div class="position-absolute prod-cat1" >
-                   <h1>
-                     Medical
-                   </h1>
-                 </div>
-       
-                 <div class="position-absolute item-type">
-                   <p>SUPPLIES</p>
-                 </div>
-                </div>
-               </li>
-               <li class="product-item">
-                <div class="position-relative product-card shadow">
-                 <img src="./img/product/Ventilator-Biyovent.png" alt="">
-       
-                 <div class="position-absolute prod-cat" >
-                   <h1>
-                     Medical
-                   </h1>
-                 </div>
-                 <div class="position-absolute prod-cat1" >
-                   <h1>
-                     Medical
-                   </h1>
-                 </div>
-       
-                 <div class="position-absolute item-type">
-                   <p>DENTAL</p>
-                 </div>
-                </div>
-               </li>
+        
+            
                
             
             </ul>
@@ -464,7 +409,7 @@
               <li class="list-title"><strong>Philorientpharma</strong></li>
               <li><a href="./index.html" class="link">Home</a></li>
               <li><a href="./aboutus.html" class="link">About Us</a></li>
-              <li><a href="./index.html#services" class="link">Services</a></li>
+              <li><a href="./products.html" class="link">Products</a></li>
               <li><a href="./blog.html" class="link">Blog</a></li>
             </ul>
           </div>
@@ -706,6 +651,29 @@ gsap.fromTo(
     ease: "power3.out"
   }
 );
+
+
+gsap.fromTo(
+  ".product-btn",
+  {
+    x: "100vw", // Adjust based on your initial offset
+  },
+  {
+    x: "0", // Element animates to its original position
+    opacity: 1,
+    // Optional fade-in effect
+    scrollTrigger: {
+      trigger: ".prod-h1", // Trigger on the element itself
+      start: "top 100%", // Animate when fully visible
+      toggleActions: "restart none none none",
+      // Finish when no longer visible
+    
+    },
+    duration: 0.5, // Adjust duration for desired speed
+    ease: "power3.out"
+  }
+);
+
 gsap.fromTo(
   ".prod-h1",
   {
@@ -737,7 +705,7 @@ gsap.fromTo(
     opacity: 1,
     // Optional fade-in effect
     scrollTrigger: {
-      trigger: ".prod-p", // Trigger on the element itself
+      trigger: ".prod-h1", // Trigger on the element itself
       start: "top 100%", // Animate when fully visible
       toggleActions: "restart none none none",
       // Finish when no longer visible
