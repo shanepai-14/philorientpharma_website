@@ -966,6 +966,14 @@ p {
 .values-list h1 {
   font-weight: bold;
 }
+.navbar-toggler{
+  border: none;
+ filter: brightness(0) saturate(100%) invert(12%) sepia(31%) saturate(7003%) hue-rotate(220deg) brightness(101%) contrast(108%);
+}
+.navbar-toggler:focus {
+ 
+box-shadow: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1158px) {
   .hero-title {
     width: 100%;
