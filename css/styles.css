@@ -1053,6 +1053,20 @@ p {
   position: relative;
 }
 
+@media screen and (max-width: 767px){
+  .product-head{
+    flex-direction: column;
+  }
+  .product-head .hero-head{
+    margin-bottom: 1rem!important;
+  }
+  .product-section .product-item{
+    width: 100%;
+  }
+}
+
+
+
 @media (max-width: 1399px) {
   .hero-image {
     -webkit-mask-image: url("../img/blob.svg") !important;
