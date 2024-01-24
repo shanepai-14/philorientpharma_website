@@ -33,6 +33,19 @@ body {
   /* background-color: var(--slime); */
   font-family: "Manrope";
 }
+.partner-sec h1 {
+  font-weight: bold;
+  color: var(--st-tropaz);
+}
+.partner-name h1 {
+  font-size: 50px;
+}
+.partner-name p {
+  font-size: 20px;
+}
+.partner-div {
+  background-color: var(--coffe);
+}
 .logo {
   font-size: 24px;
   color: var(--st-tropaz);
@@ -966,13 +979,13 @@ p {
 .values-list h1 {
   font-weight: bold;
 }
-.navbar-toggler{
+.navbar-toggler {
   border: none;
- filter: brightness(0) saturate(100%) invert(12%) sepia(31%) saturate(7003%) hue-rotate(220deg) brightness(101%) contrast(108%);
+  filter: brightness(0) saturate(100%) invert(12%) sepia(31%) saturate(7003%)
+    hue-rotate(220deg) brightness(101%) contrast(108%);
 }
 .navbar-toggler:focus {
- 
-box-shadow: none;
+  box-shadow: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1158px) {
   .hero-title {
@@ -1001,7 +1014,7 @@ box-shadow: none;
     left: 0;
     z-index: 1;
   }
-  .aboutus-card:nth-child(3){
+  .aboutus-card:nth-child(3) {
     margin: auto;
   }
   .partners img {
@@ -1010,20 +1023,27 @@ box-shadow: none;
   .img-border {
     left: 22%;
   }
-  .about-h4{
-  padding-top: 15px;
+  .about-h4 {
+    padding-top: 15px;
   }
-  .product-btn{
-    margin-bottom: 15px!important;
+  .product-btn {
+    margin-bottom: 15px !important;
   }
-
 }
 @media (max-width: 768px) {
-  .product-btn{
-    margin-bottom: 15px!important;
+  .partner-sec .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
   }
-  .product-item{
-   width: 100%; 
+
+  .product-btn {
+    margin-bottom: 15px !important;
+  }
+  .product-item {
+    width: 100%;
   }
   .nav-link::after {
     left: 0;
@@ -1156,6 +1176,9 @@ box-shadow: none;
   }
 }
 @media (max-width: 480px) {
+  .partner-name {
+    font-size: 15px;
+  }
   .poster {
     width: 100% !important;
     margin-bottom: 25px;
